@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="CMU">
+
+  <mujoco>
+    <compiler meshdir="C:\Users\Ho\Desktop\Cassie Mock Up Mujoco\URDF Mk 2\CMU\meshes" balanceinertia="true" discardvisual="false"/>
+  </mujoco>
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-2.6164E-18 0.0054434 -4.8459E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0075876" />
+      <inertia
+        ixx="2.0607E-07"
+        ixy="1.4523E-24"
+        ixz="6.8572E-24"
+        iyy="2.4038E-06"
+        iyz="-2.5896E-24"
+        izz="2.4439E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.50196 0.50196 0.50196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="R Hip 1">
+    <inertial>
+      <origin
+        xyz="0 -4.8459E-06 0.0058198"
+        rpy="0 0 0" />
+      <mass
+        value="0.00049067" />
+      <inertia
+        ixx="9.7996E-09"
+        ixy="6.8699E-25"
+        ixz="7.5211E-25"
+        iyy="1.27E-08"
+        iyz="-1.8421E-24"
+        izz="4.8429E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/R Hip 1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/R Hip 1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R Hip 1"
+    type="revolute">
+    <origin
+      xyz="0.021005 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="R Hip 1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="R Hip 2">
+    <inertial>
+      <origin
+        xyz="1.7347E-18 -1.0408E-17 0.010768"
+        rpy="0 0 0" />
+      <mass
+        value="0.0010046" />
+      <inertia
+        ixx="3.4397E-08"
+        ixy="3.3087E-24"
+        ixz="3.4972E-25"
+        iyy="4.567E-08"
+        iyz="5.9028E-24"
+        izz="1.5356E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/R Hip 2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/R Hip 2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R Hip 2"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0076962"
+      rpy="1.5708 1.3137 0" />
+    <parent
+      link="R Hip 1" />
+    <child
+      link="R Hip 2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="R Thigh">
+    <inertial>
+      <origin
+        xyz="3.40458762552905E-05 -0.00794652833573034 -0.00422524406507302"
+        rpy="0 0 0" />
+      <mass
+        value="0.00259524215854131" />
+      <inertia
+        ixx="2.5711579287713E-07"
+        ixy="-1.32348898008484E-23"
+        ixz="-9.92616735063633E-24"
+        iyy="9.07351429374604E-08"
+        iyz="-6.76389432955441E-08"
+        izz="1.81981229583593E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/R Thigh.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/R Thigh.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R Thigh"
+    type="revolute">
+    <origin
+      xyz="0 0 0.013139"
+      rpy="-1.5708 0 1.5708" />
+    <parent
+      link="R Hip 2" />
+    <child
+      link="R Thigh" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="R Foreleg">
+    <inertial>
+      <origin
+        xyz="0 -0.0181496911312229 0.0103925983154121"
+        rpy="0 0 0" />
+      <mass
+        value="0.00244939435652077" />
+      <inertia
+        ixx="1.23016334442146E-06"
+        ixy="-7.94093388050907E-23"
+        ixz="3.97046694025453E-23"
+        iyy="4.6841924702673E-07"
+        iyz="5.60585013825991E-07"
+        izz="7.71398751277428E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/R Foreleg.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/R Foreleg.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R Foreleg"
+    type="revolute">
+    <origin
+      xyz="0 -0.015893 -0.0084505"
+      rpy="0 0 0" />
+    <parent
+      link="R Thigh" />
+    <child
+      link="R Foreleg" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="R Shin">
+    <inertial>
+      <origin
+        xyz="0.014026 -0.017859 -4.1658E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.001292" />
+      <inertia
+        ixx="2.2474E-07"
+        ixy="2.0998E-07"
+        ixz="-1.1797E-09"
+        iyy="2.1403E-07"
+        iyz="1.644E-09"
+        izz="4.338E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/R Shin.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/R Shin.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R Shin"
+    type="revolute">
+    <origin
+      xyz="0 -0.053567 0.035952"
+      rpy="0 1.5708 0" />
+    <parent
+      link="R Foreleg" />
+    <child
+      link="R Shin" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="R Feet">
+    <inertial>
+      <origin
+        xyz="0.0019616 -0.0049539 1.0408E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.00051872" />
+      <inertia
+        ixx="3.0999E-09"
+        ixy="5.5367E-10"
+        ixz="-1.6544E-24"
+        iyy="2.0382E-08"
+        iyz="-1.6027E-24"
+        izz="2.18E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/R Feet.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/R Feet.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R Feet"
+    type="revolute">
+    <origin
+      xyz="0.034784 -0.039603 0"
+      rpy="0 0 0" />
+    <parent
+      link="R Shin" />
+    <child
+      link="R Feet" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="L Hip 1">
+    <inertial>
+      <origin
+        xyz="0 -4.8459E-06 0.0058198"
+        rpy="0 0 0" />
+      <mass
+        value="0.00049067" />
+      <inertia
+        ixx="9.7996E-09"
+        ixy="6.8699E-25"
+        ixz="7.4871E-25"
+        iyy="1.27E-08"
+        iyz="-1.8421E-24"
+        izz="4.8429E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/L Hip 1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/L Hip 1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L Hip 1"
+    type="revolute">
+    <origin
+      xyz="-0.021005 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="L Hip 1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="L Hip 2">
+    <inertial>
+      <origin
+        xyz="4.8095E-06 -4.8459E-06 -0.0023703"
+        rpy="0 0 0" />
+      <mass
+        value="0.0010046" />
+      <inertia
+        ixx="3.4397E-08"
+        ixy="-4.7976E-23"
+        ixz="5.9682E-24"
+        iyy="4.567E-08"
+        iyz="-1.6625E-23"
+        izz="1.5356E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/L Hip 2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/L Hip 2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L Hip 2"
+    type="revolute">
+    <origin
+      xyz="0 -0.013139 0.007699"
+      rpy="-1.5708 1.2153 3.1416" />
+    <parent
+      link="L Hip 1" />
+    <child
+      link="L Hip 2" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="L Thigh">
+    <inertial>
+      <origin
+        xyz="2.92E-05 -0.0079474 -0.00423"
+        rpy="0 0 0" />
+      <mass
+        value="0.0025952" />
+      <inertia
+        ixx="2.5712E-07"
+        ixy="1.8198E-23"
+        ixz="9.9262E-24"
+        iyy="9.0735E-08"
+        iyz="-6.7639E-08"
+        izz="1.8198E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/L Thigh.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/L Thigh.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L Thigh"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.4086 0 1.5708" />
+    <parent
+      link="L Hip 2" />
+    <child
+      link="L Thigh" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="L Foreleg">
+    <inertial>
+      <origin
+        xyz="4.8095E-06 -0.018151 0.010388"
+        rpy="0 0 0" />
+      <mass
+        value="0.0024494" />
+      <inertia
+        ixx="1.2302E-06"
+        ixy="-1.3938E-22"
+        ixz="-2.647E-23"
+        iyy="4.6842E-07"
+        iyz="5.6059E-07"
+        izz="7.714E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/L Foreleg.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/L Foreleg.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L Foreleg"
+    type="revolute">
+    <origin
+      xyz="0 -0.015891 -0.0084512"
+      rpy="-0.14969 0 0" />
+    <parent
+      link="L Thigh" />
+    <child
+      link="L Foreleg" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="L Shin">
+    <inertial>
+      <origin
+        xyz="0.014028 -0.017858 -4.1658E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.001292" />
+      <inertia
+        ixx="2.2474E-07"
+        ixy="2.0998E-07"
+        ixz="-1.1797E-09"
+        iyy="2.1403E-07"
+        iyz="1.644E-09"
+        izz="4.338E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/L Shin.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/L Shin.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L Shin"
+    type="revolute">
+    <origin
+      xyz="0 -0.05357 0.03595"
+      rpy="-1.5708 1.5604 -1.5708" />
+    <parent
+      link="L Foreleg" />
+    <child
+      link="L Shin" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="L Feet">
+    <inertial>
+      <origin
+        xyz="0.0019581 -0.0049555 -3.4694E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.00051872" />
+      <inertia
+        ixx="3.0999E-09"
+        ixy="5.5367E-10"
+        ixz="7.2378E-24"
+        iyy="2.0382E-08"
+        iyz="8.9038E-25"
+        izz="2.18E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/L Feet.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CMU/meshes/L Feet.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L Feet"
+    type="revolute">
+    <origin
+      xyz="0.03479 -0.0396 0"
+      rpy="0 0 -0.0021136" />
+    <parent
+      link="L Shin" />
+    <child
+      link="L Feet" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
