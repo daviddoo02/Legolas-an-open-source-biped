@@ -4,6 +4,19 @@
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
   name="CMU">
+
+  <mujoco>
+    <compiler meshdir="C:\Users\Ho\Documents\GitHub\Biped\URDF\Mk 3\meshes" balanceinertia="true" discardvisual="false" convexhull="false"/>
+    <option gravity ="0 0 0" />
+
+    <asset>
+      <texture name="grid" type="2d" builtin="checker" width="512" height="512" rgb1=".1 .2 .3" rgb2=".2 .3 .4"/>
+      <material name="grid" texture="grid" texrepeat="1 1" texuniform="true" reflectance=".2"/>
+      <mesh file= "base_link.STL" scale="10 10 10"/>
+    </asset>
+
+  </mujoco>
+
   <link
     name="base_link">
     <inertial>
