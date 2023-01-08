@@ -5,7 +5,7 @@
 <robot
   name="Cassie_mock_up">
   <mujoco>
-    <compiler meshdir="/home/daviddoo02/biped/src/Cassie_test_description/meshes/" balanceinertia="true" discardvisual="false"/>
+    <compiler meshdir="C:\Users\Ho\Documents\GitHub\Biped\URDF\Mk 1\meshes" balanceinertia="true" discardvisual="false" convexhull="false"/>
     <option gravity ="0 0 0" />
 
     <asset>
