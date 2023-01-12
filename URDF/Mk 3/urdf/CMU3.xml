@@ -1,0 +1,98 @@
+<mujoco model="CMU">
+  <compiler angle="radian" meshdir="/home/daviddoo02/biped/Biped/URDF/Mk 3/meshes/" autolimits="true"/>
+  <option gravity="0 0 0"/>
+  <size/>
+  <default/>
+  <asset>
+    <mesh name="base_link" file="base_link.STL"/>
+    <mesh name="base_link_collision" file="base_link_collision.STL"/>
+    <mesh name="R Hip 1" file="R Hip 1.STL"/>
+    <mesh name="R Hip 2" file="R Hip 2.STL"/>
+    <mesh name="R Thigh" file="R Thigh.STL"/>
+    <mesh name="R Foreleg" file="R Foreleg.STL"/>
+    <mesh name="R Shin" file="R Shin.STL"/>
+    <mesh name="R Foot" file="R Foot.STL"/>
+    <mesh name="L Hip 1" file="L Hip 1.STL"/>
+    <mesh name="L Hip 2" file="L Hip 2.STL"/>
+    <mesh name="L Thigh" file="L Thigh.STL"/>
+    <mesh name="L Foreleg" file="L Foreleg.STL"/>
+    <mesh name="L Shin" file="L Shin.STL"/>
+    <mesh name="L Foot" file="L Foot.STL"/>
+  </asset>
+  <worldbody>
+    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.501961 0.501961 0.501961 1" mesh="base_link"/>
+    <geom type="mesh" rgba="0.501961 0.501961 0.501961 1" mesh="base_link_collision"/>
+    <body name="R Hip 1" pos="0.021005 0 0" quat="0.707105 0.707108 0 0">
+      <inertial pos="0 -4.8459e-06 0.00581975" quat="0.707107 0 0 0.707107" mass="0.000490673" diaginertia="1.27003e-08 9.79961e-09 4.84291e-09"/>
+      <joint name="R Hip 1" pos="0 0 0" axis="0 0 1"/>
+      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="R Hip 1"/>
+      <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="R Hip 1"/>
+      <body name="R Hip 2" pos="0 0 0.0076962" quat="0.559971 0.559973 0.431777 -0.431778">
+        <inertial pos="0 0 0.0107683" quat="0.707107 0 0 0.707107" mass="0.00100456" diaginertia="4.56705e-08 3.43974e-08 1.53565e-08"/>
+        <joint name="R Hip 2" pos="0 0 0" axis="0 0 1"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="R Hip 2"/>
+        <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="R Hip 2"/>
+        <body name="R Thigh" pos="0 0 0.013139" quat="0.499998 -0.5 -0.500002 0.5">
+          <inertial pos="3.40459e-05 -0.00794653 -0.00422524" quat="0.515038 0.857167 0 0" mass="0.00259524" diaginertia="2.57116e-07 2.17945e-07 5.47709e-08"/>
+          <joint name="R Thigh" pos="0 0 0" axis="1 0 0"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 0 1" mesh="R Thigh"/>
+          <geom type="mesh" rgba="1 1 0 1" mesh="R Thigh"/>
+          <body name="R Foreleg" pos="0 -0.015893 -0.0084505">
+            <inertial pos="0 -0.0181497 0.0103926" quat="0.896637 0.442767 0 0" mass="0.00244939" diaginertia="1.23016e-06 1.2006e-06 3.92157e-08"/>
+            <joint name="R Foreleg" pos="0 0 0" axis="1 0 0"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0 1 1 1" mesh="R Foreleg"/>
+            <geom type="mesh" rgba="0 1 1 1" mesh="R Foreleg"/>
+            <body name="R Shin" pos="0 -0.053567 0.035952" quat="0.707105 0 0.707108 0">
+              <inertial pos="0.0140257 -0.0178589 -4.16582e-05" quat="0.297674 0.659038 -0.25162 0.643232" mass="0.00129205" diaginertia="4.33834e-07 4.29412e-07 9.31982e-09"/>
+              <joint name="R Shin" pos="0 0 0" axis="0 0 1"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 0 0 1" mesh="R Shin"/>
+              <geom type="mesh" rgba="1 0 0 1" mesh="R Shin"/>
+              <body name="R Foot" pos="0.034784 -0.039603 0">
+                <inertial pos="0.00196159 -0.00495387 0" quat="0.0113111 0.707016 -0.0113111 0.707016" mass="0.000518724" diaginertia="2.17999e-08 2.03996e-08 3.0822e-09"/>
+                <joint name="R Foot" pos="0 0 0" axis="0 0 1"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="R Foot"/>
+                <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="R Foot"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    <body name="L Hip 1" pos="-0.021005 0 0" quat="-2.59734e-06 -2.59735e-06 0.707108 0.707105">
+      <inertial pos="0 -4.8459e-06 -0.00581975" quat="0.707107 0 0 0.707107" mass="0.000490673" diaginertia="1.27003e-08 9.79961e-09 4.84291e-09"/>
+      <joint name="L Hip 1" pos="0 0 0" axis="0 0 -1"/>
+      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="L Hip 1"/>
+      <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="L Hip 1"/>
+      <body name="L Hip 2" pos="0 0 -0.0077" quat="0.695963 0.695966 0.125034 -0.125035">
+        <inertial pos="-5.83674e-06 1.90269e-06 0.0107683" mass="0.00100456" diaginertia="4.56705e-08 3.43974e-08 1.53565e-08"/>
+        <joint name="L Hip 2" pos="0 0 0" axis="0 0 -1"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="L Hip 2"/>
+        <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="L Hip 2"/>
+        <body name="L Thigh" pos="0 0 0.013141" quat="-2.59734e-06 -2.59735e-06 -0.707108 -0.707105">
+          <inertial pos="3.88553e-05 0.00721943 0.00537503" quat="0.448982 0.893541 0 0" mass="0.00259524" diaginertia="2.57116e-07 2.17945e-07 5.47709e-08"/>
+          <joint name="L Thigh" pos="0 0 0" axis="-1 0 0"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 0 1" mesh="L Thigh"/>
+          <geom type="mesh" rgba="1 1 0 1" mesh="L Thigh"/>
+          <body name="L Foreleg" pos="0 0.014316 0.010906" quat="0.00624629 -0.99998 0 0">
+            <inertial pos="4.80947e-06 -0.0182724 0.0105532" quat="0.896637 0.442767 0 0" mass="0.00244939" diaginertia="1.23016e-06 1.2006e-06 3.92157e-08"/>
+            <joint name="L Foreleg" pos="0 0 0" axis="1 0 0"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0 1 1 1" mesh="L Foreleg"/>
+            <geom type="mesh" rgba="0 1 1 1" mesh="L Foreleg"/>
+            <body name="L Shin" pos="0 -0.05357 0.03595" quat="0.707097 -0.00367564 0.707097 -0.00367564">
+              <inertial pos="0.0138646 -0.0179804 -4.16582e-05" quat="0.297674 0.659038 -0.25162 0.643232" mass="0.00129205" diaginertia="4.33834e-07 4.29412e-07 9.31982e-09"/>
+              <joint name="L Shin" pos="0 0 0" axis="0 0 1"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 0 0 1" mesh="L Shin"/>
+              <geom type="mesh" rgba="1 0 0 1" mesh="L Shin"/>
+              <body name="L Foot" pos="0.03479 -0.0396 0" quat="0.999999 0 0 -0.0010568">
+                <inertial pos="0.00179478 -0.00507841 0" quat="0.0113111 0.707016 -0.0113111 0.707016" mass="0.000518724" diaginertia="2.17999e-08 2.03996e-08 3.0822e-09"/>
+                <joint name="L Foot" pos="0 0 0" axis="0 0 1"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="L Foot"/>
+                <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="L Foot"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>
