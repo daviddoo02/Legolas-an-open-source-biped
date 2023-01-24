@@ -1,5 +1,5 @@
 <mujoco model="CMU">
-  <compiler angle="radian" meshdir="/home/daviddoo02/biped/Biped/URDF/Mk 3/meshes/" autolimits="true"/>
+  <compiler angle="radian" meshdir="meshes/" autolimits="true"/>
   <size/>
   <default/>
 
