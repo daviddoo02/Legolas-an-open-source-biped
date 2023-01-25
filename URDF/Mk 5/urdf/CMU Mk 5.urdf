@@ -3,10 +3,10 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="CMU MK 4">
+  name="CMU Mk 5">
 
   <mujoco>
-    <compiler meshdir="C:\Users\Ho\Documents\GitHub\Biped\URDF\Mk 4\meshes" balanceinertia="true" discardvisual="false"/>
+    <compiler meshdir="C:\Users\Ho\Documents\GitHub\Biped\URDF\Mk 5\meshes" balanceinertia="true" discardvisual="false"/>
     <!--option gravity ="0 0 0" /-->
   </mujoco>
 
@@ -14,17 +14,17 @@
     name="base_link">
     <inertial>
       <origin
-        xyz="3.86498628959769E-08 0.00116844799147214 -0.00199056182136681"
+        xyz="3.86498628958111E-08 0.00199056182136681 0.00116844799147214"
         rpy="0 0 0" />
       <mass
         value="0.0299227589680342" />
       <inertia
         ixx="4.64430780114595E-06"
-        ixy="1.45948993644936E-11"
-        ixz="7.00056514340351E-12"
-        iyy="5.96248441172554E-06"
-        iyz="7.65792898200086E-08"
-        izz="4.78982197003375E-06" />
+        ixy="-7.0005651433834E-12"
+        ixz="1.45948993644957E-11"
+        iyy="4.78982197003375E-06"
+        iyz="-7.65792898200085E-08"
+        izz="5.96248441172554E-06" />
     </inertial>
     <visual>
       <origin
@@ -32,7 +32,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/base_link.STL" />
+          filename="package://CMU Mk 5/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -46,12 +46,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/base_link_collision.STL" />
+          filename="package://CMU Mk 5/meshes/base_link_collision.STL" />
       </geometry>
     </collision>
   </link>
   <link
-    name="R Hip 1">
+    name="R_Hip_1">
     <inertial>
       <origin
         xyz="-3.00471388825496E-07 -4.83657959842528E-06 0.0058197522890202"
@@ -61,9 +61,9 @@
       <inertia
         ixx="9.79960981258842E-09"
         ixy="-1.86115637824431E-24"
-        ixz="9.12861152574054E-25"
+        ixz="9.20921624633488E-25"
         iyy="1.27003133712708E-08"
-        iyz="1.5390446516608E-23"
+        iyz="1.53837706159451E-23"
         izz="4.84290883694006E-09" />
     </inertial>
     <visual>
@@ -72,7 +72,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/R Hip 1.STL" />
+          filename="package://CMU Mk 5/meshes/R_Hip_1.STL" />
       </geometry>
       <material
         name="">
@@ -86,12 +86,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/R Hip 1.STL" />
+          filename="package://CMU Mk 5/meshes/R_Hip_1.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="R Hip 1"
+    name="R_Hip_1"
     type="revolute">
     <origin
       xyz="0.021005 0 0"
@@ -99,7 +99,7 @@
     <parent
       link="base_link" />
     <child
-      link="R Hip 1" />
+      link="R_Hip_1" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -109,7 +109,7 @@
       velocity="0" />
   </joint>
   <link
-    name="R Hip 2">
+    name="R_Hip_2">
     <inertial>
       <origin
         xyz="-1.39156174430721E-10 -1.14679487780989E-09 0.0107683298059861"
@@ -117,11 +117,11 @@
       <mass
         value="0.00100456223004492" />
       <inertia
-        ixx="3.43974392373397E-08"
+        ixx="3.43974392373396E-08"
         ixy="4.54949336904165E-24"
-        ixz="4.46858243754248E-24"
+        ixz="4.50726241351874E-24"
         iyy="4.56704869048962E-08"
-        iyz="9.87552308348419E-25"
+        iyz="9.85995399814776E-25"
         izz="1.53564582402189E-08" />
     </inertial>
     <visual>
@@ -130,7 +130,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/R Hip 2.STL" />
+          filename="package://CMU Mk 5/meshes/R_Hip_2.STL" />
       </geometry>
       <material
         name="">
@@ -144,20 +144,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/R Hip 2.STL" />
+          filename="package://CMU Mk 5/meshes/R_Hip_2.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="R Hip 2"
+    name="R_Hip_2"
     type="revolute">
     <origin
       xyz="0 0 0.0076962"
       rpy="1.5708 1.45 0" />
     <parent
-      link="R Hip 1" />
+      link="R_Hip_1" />
     <child
-      link="R Hip 2" />
+      link="R_Hip_2" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -167,19 +167,19 @@
       velocity="0" />
   </joint>
   <link
-    name="R Thigh">
+    name="R_Thigh">
     <inertial>
       <origin
-        xyz="3.40458762854261E-05 0.00899999999999256 -4.64558946866589E-15"
+        xyz="3.40458762854226E-05 0.00899999999999177 -5.55978874050567E-15"
         rpy="0 0 0" />
       <mass
         value="0.00259524215854131" />
       <inertia
         ixx="2.5711579287713E-07"
-        ixy="-2.54365482985569E-19"
-        ixz="1.94983013991E-20"
+        ixy="-2.54358038360056E-19"
+        ixz="1.94949926766498E-20"
         iyy="5.47708788396037E-08"
-        iyz="1.82150133967852E-19"
+        iyz="1.82148479606627E-19"
         izz="2.1794549368145E-07" />
     </inertial>
     <visual>
@@ -188,7 +188,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/R Thigh.STL" />
+          filename="package://CMU Mk 5/meshes/R_Thigh.STL" />
       </geometry>
       <material
         name="">
@@ -202,20 +202,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/R Thigh.STL" />
+          filename="package://CMU Mk 5/meshes/R_Thigh.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="R Thigh"
+    name="R_Thigh"
     type="revolute">
     <origin
       xyz="0 0 0.013139"
       rpy="1.9476 0 1.5708" />
     <parent
-      link="R Hip 2" />
+      link="R_Hip_2" />
     <child
-      link="R Thigh" />
+      link="R_Thigh" />
     <axis
       xyz="-1 0 0" />
     <limit
@@ -225,18 +225,18 @@
       velocity="0" />
   </joint>
   <link
-    name="R Foreleg">
+    name="R_Foreleg">
     <inertial>
       <origin
-        xyz="-6.31647512072675E-14 0.0208616954643258 -0.00148561443805893"
+        xyz="-6.31543428664116E-14 0.0208616954643244 -0.00148561443805957"
         rpy="0 0 0" />
       <mass
         value="0.00244939435652077" />
       <inertia
         ixx="1.23016334442146E-06"
-        ixy="1.13812235430508E-18"
-        ixz="5.10006478475695E-20"
-        iyy="4.37186901229747E-08"
+        ixy="1.13802805571525E-18"
+        ixz="5.10138827373703E-20"
+        iyy="4.37186901229748E-08"
         iyz="-7.21763846852377E-08"
         izz="1.19609930818118E-06" />
     </inertial>
@@ -246,7 +246,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/R Foreleg.STL" />
+          filename="package://CMU Mk 5/meshes/R_Foreleg.STL" />
       </geometry>
       <material
         name="">
@@ -260,20 +260,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/R Foreleg.STL" />
+          filename="package://CMU Mk 5/meshes/R_Foreleg.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="R Foreleg"
+    name="R_Foreleg"
     type="revolute">
     <origin
       xyz="0 0.018 0"
       rpy="-2.0409 0 3.1416" />
     <parent
-      link="R Thigh" />
+      link="R_Thigh" />
     <child
-      link="R Foreleg" />
+      link="R_Foreleg" />
     <axis
       xyz="-1 0 0" />
     <limit
@@ -283,17 +283,17 @@
       velocity="0" />
   </joint>
   <link
-    name="R Shin">
+    name="R_Shin">
     <inertial>
       <origin
-        xyz="4.16581931406423E-05 0.0220307112180927 -0.00550832169754341"
+        xyz="4.16581931406458E-05 0.0220307112180864 -0.00550832169753876"
         rpy="0 0 0" />
       <mass
         value="0.00129204638168326" />
       <inertia
-        ixx="4.33803544747724E-07"
-        ixy="1.98250687548617E-09"
-        ixz="-4.05058191267595E-10"
+        ixx="4.33803544747725E-07"
+        ixy="1.9825068754861E-09"
+        ixz="-4.05058191267532E-10"
         iyy="5.92096369131144E-08"
         iyz="1.35892895157701E-07"
         izz="3.79552483486921E-07" />
@@ -304,7 +304,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/R Shin.STL" />
+          filename="package://CMU Mk 5/meshes/R_Shin.STL" />
       </geometry>
       <material
         name="">
@@ -318,20 +318,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/R Shin.STL" />
+          filename="package://CMU Mk 5/meshes/R_Shin.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="R Shin"
+    name="R_Shin"
     type="revolute">
     <origin
       xyz="0 0.064516 0"
       rpy="-1.0363 0 0" />
     <parent
-      link="R Foreleg" />
+      link="R_Foreleg" />
     <child
-      link="R Shin" />
+      link="R_Shin" />
     <axis
       xyz="-1 0 0" />
     <limit
@@ -341,20 +341,20 @@
       velocity="0" />
   </joint>
   <link
-    name="R Foot">
+    name="R_Foot">
     <inertial>
       <origin
-        xyz="0.00196158784930957 -0.00495386725339735 1.6584516746021E-10"
+        xyz="-1.65908339150311E-10 0.000576077817651913 -0.00529706893480722"
         rpy="0 0 0" />
       <mass
-        value="0.00051872426680286" />
+        value="0.000518724266802862" />
       <inertia
-        ixx="3.099919841024E-09"
-        ixy="5.53677175382017E-10"
-        ixz="-9.03463020226434E-16"
-        iyy="2.03818889804819E-08"
-        iyz="-1.60772145819672E-16"
-        izz="2.17998844497553E-08" />
+        ixx="2.17998844497554E-08"
+        ixy="-8.74320572580241E-16"
+        ixz="-2.78661470285053E-16"
+        iyy="7.30759983437215E-09"
+        iyz="-7.43767324382255E-09"
+        izz="1.61742089871338E-08" />
     </inertial>
     <visual>
       <origin
@@ -362,7 +362,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/R Foot.STL" />
+          filename="package://CMU Mk 5/meshes/R_Foot.STL" />
       </geometry>
       <material
         name="">
@@ -376,22 +376,22 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/R Foot.STL" />
+          filename="package://CMU Mk 5/meshes/R_Foot.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="R Foot"
+    name="R_Foot"
     type="revolute">
     <origin
-      xyz="0 0.050358 -0.015572"
-      rpy="-1.5708 1.1597 1.5708" />
+      xyz="0 0.050358 -0.015576"
+      rpy="1.4972 0 0" />
     <parent
-      link="R Shin" />
+      link="R_Shin" />
     <child
-      link="R Foot" />
+      link="R_Foot" />
     <axis
-      xyz="0 0 1" />
+      xyz="-1 0 0" />
     <limit
       lower="0"
       upper="0"
@@ -402,17 +402,17 @@
     name="R_Servo">
     <inertial>
       <origin
-        xyz="0.000823287373050596 -0.000486227731168444 5.18328518994693E-10"
+        xyz="0.000823287373076326 -0.000486227731168437 5.1837405201649E-10"
         rpy="0 0 0" />
       <mass
         value="0.000108566149369813" />
       <inertia
-        ixx="5.20764811255309E-10"
-        ixy="-1.55186013777784E-10"
-        ixz="-2.37041276856506E-16"
-        iyy="6.78013685642094E-10"
-        iyz="-9.77022261900665E-17"
-        izz="9.03101565925093E-10" />
+        ixx="5.20764811255318E-10"
+        ixy="-1.55186013777785E-10"
+        ixz="-2.37037193893003E-16"
+        iyy="6.78013685642107E-10"
+        iyz="-9.7700567760793E-17"
+        izz="9.03101565925096E-10" />
     </inertial>
     <visual>
       <origin
@@ -420,7 +420,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/R_Servo.STL" />
+          filename="package://CMU Mk 5/meshes/R_Servo.STL" />
       </geometry>
       <material
         name="">
@@ -434,7 +434,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/R_Servo.STL" />
+          filename="package://CMU Mk 5/meshes/R_Servo.STL" />
       </geometry>
     </collision>
   </link>
@@ -445,7 +445,7 @@
       xyz="-0.002 0.012585 0"
       rpy="0 -1.1706 1.5708" />
     <parent
-      link="R Shin" />
+      link="R_Shin" />
     <child
       link="R_Servo" />
     <axis
@@ -457,20 +457,20 @@
       velocity="0" />
   </joint>
   <link
-    name="R_Servo Joint">
+    name="R_Servo_Link">
     <inertial>
       <origin
-        xyz="-1.48353551665537E-13 0.0193149999999995 -4.30488977798404E-14"
+        xyz="-1.48332734983825E-13 0.0193150000000451 -4.84334794492725E-15"
         rpy="0 0 0" />
       <mass
-        value="5.90677466361002E-05" />
+        value="5.90677466361003E-05" />
       <inertia
-        ixx="7.67849248203422E-09"
-        ixy="7.70587817040539E-21"
-        ixz="-4.13590306276514E-25"
-        iyy="1.55957115728263E-11"
-        iyz="1.84554407119658E-20"
-        izz="7.67827899614787E-09" />
+        ixx="7.67849248203425E-09"
+        ixy="7.7005502669604E-21"
+        ixz="1.70606001339062E-24"
+        iyy="1.55957115728424E-11"
+        iyz="1.01657621537669E-20"
+        izz="7.67827899614791E-09" />
     </inertial>
     <visual>
       <origin
@@ -478,7 +478,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/R_Servo Joint.STL" />
+          filename="package://CMU Mk 5/meshes/R_Servo_Link.STL" />
       </geometry>
       <material
         name="">
@@ -492,12 +492,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/R_Servo Joint.STL" />
+          filename="package://CMU Mk 5/meshes/R_Servo_Link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="R_Servo Joint"
+    name="R_Servo_Link"
     type="revolute">
     <origin
       xyz="0.0075599 0 0"
@@ -505,7 +505,7 @@
     <parent
       link="R_Servo" />
     <child
-      link="R_Servo Joint" />
+      link="R_Servo_Link" />
     <axis
       xyz="-1 0 0" />
     <limit
@@ -518,16 +518,16 @@
     name="R_Linkage">
     <inertial>
       <origin
-        xyz="5.27217158818871E-14 0.0331958375326 6.02989880249538E-15"
+        xyz="5.27217158818871E-14 0.0331958375326 6.13398221105399E-15"
         rpy="0 0 0" />
       <mass
         value="0.000113819103585905" />
       <inertia
         ixx="4.88600388859055E-08"
-        ixy="-5.09569676221272E-20"
+        ixy="-5.09537388712401E-20"
         ixz="-4.508134338414E-23"
-        iyy="7.27167695355048E-11"
-        iyz="-7.3952725572111E-21"
+        iyy="7.27167695355401E-11"
+        iyz="-7.41463375342367E-21"
         izz="4.88062919669676E-08" />
     </inertial>
     <visual>
@@ -536,7 +536,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/R_Linkage.STL" />
+          filename="package://CMU Mk 5/meshes/R_Linkage.STL" />
       </geometry>
       <material
         name="">
@@ -550,7 +550,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/R_Linkage.STL" />
+          filename="package://CMU Mk 5/meshes/R_Linkage.STL" />
       </geometry>
     </collision>
   </link>
@@ -561,7 +561,7 @@
       xyz="-0.00575 0 0"
       rpy="-1.0666 0 0" />
     <parent
-      link="R Thigh" />
+      link="R_Thigh" />
     <child
       link="R_Linkage" />
     <axis
@@ -573,7 +573,7 @@
       velocity="0" />
   </joint>
   <link
-    name="L Hip 1">
+    name="L_Hip_1">
     <inertial>
       <origin
         xyz="0 -4.84590396801472E-06 0.00581975228901994"
@@ -583,9 +583,9 @@
       <inertia
         ixx="9.79960981258834E-09"
         ixy="4.08478081521154E-18"
-        ixz="-9.90984244190521E-25"
+        ixz="-9.99528057900668E-25"
         iyy="1.27003133712708E-08"
-        iyz="-2.97174463733618E-24"
+        iyz="-2.94397948256436E-24"
         izz="4.84290883693998E-09" />
     </inertial>
     <visual>
@@ -594,7 +594,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/L Hip 1.STL" />
+          filename="package://CMU Mk 5/meshes/L_Hip_1.STL" />
       </geometry>
       <material
         name="">
@@ -608,12 +608,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/L Hip 1.STL" />
+          filename="package://CMU Mk 5/meshes/L_Hip_1.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="L Hip 1"
+    name="L_Hip_1"
     type="revolute">
     <origin
       xyz="-0.021005 0 0"
@@ -621,7 +621,7 @@
     <parent
       link="base_link" />
     <child
-      link="L Hip 1" />
+      link="L_Hip_1" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -631,19 +631,19 @@
       velocity="0" />
   </joint>
   <link
-    name="L Hip 2">
+    name="L_Hip_2">
     <inertial>
       <origin
-        xyz="4.8094707956756E-06 -4.84590073264804E-06 -0.00237034069190085"
+        xyz="4.80947079567473E-06 -4.84590073264457E-06 -0.00237034069190085"
         rpy="0 0 0" />
       <mass
         value="0.00100456223004492" />
       <inertia
-        ixx="3.43974392373391E-08"
-        ixy="-8.18908806427497E-23"
-        ixz="-6.59539474515504E-18"
+        ixx="3.43974392373392E-08"
+        ixy="-7.94093388050907E-23"
+        ixz="-6.59539469162036E-18"
         iyy="4.56704869048961E-08"
-        iyz="4.13768165530376E-17"
+        iyz="4.13768165473344E-17"
         izz="1.53564582402184E-08" />
     </inertial>
     <visual>
@@ -652,7 +652,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/L Hip 2.STL" />
+          filename="package://CMU Mk 5/meshes/L_Hip_2.STL" />
       </geometry>
       <material
         name="">
@@ -666,22 +666,22 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/L Hip 2.STL" />
+          filename="package://CMU Mk 5/meshes/L_Hip_2.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="L Hip 2"
+    name="L_Hip_2"
     type="revolute">
     <origin
       xyz="0 -0.013139 0.0076997"
       rpy="-1.5708 1.3223 3.1416" />
     <parent
-      link="L Hip 1" />
+      link="L_Hip_1" />
     <child
-      link="L Hip 2" />
+      link="L_Hip_2" />
     <axis
-      xyz="0 0 0" />
+      xyz="0 0 1" />
     <limit
       lower="0"
       upper="0"
@@ -689,19 +689,19 @@
       velocity="0" />
   </joint>
   <link
-    name="L Thigh">
+    name="L_Thigh">
     <inertial>
       <origin
-        xyz="3.88917848276292E-05 -0.00795040968252924 -0.00422240322332984"
+        xyz="3.88917848276257E-05 -0.00795040968252924 -0.00422240322332984"
         rpy="0 0 0" />
       <mass
         value="0.00259524215854131" />
       <inertia
         ixx="2.5711579287713E-07"
-        ixy="7.37569307837463E-17"
+        ixy="7.37569241663014E-17"
         ixz="8.19304992853686E-17"
-        iyy="9.07351429374604E-08"
-        iyz="-6.76389432955441E-08"
+        iyy="9.07351429374605E-08"
+        iyz="-6.76389432955442E-08"
         izz="1.81981229583593E-07" />
     </inertial>
     <visual>
@@ -710,7 +710,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/L Thigh.STL" />
+          filename="package://CMU Mk 5/meshes/L_Thigh.STL" />
       </geometry>
       <material
         name="">
@@ -724,22 +724,22 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/L Thigh.STL" />
+          filename="package://CMU Mk 5/meshes/L_Thigh.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="L Thigh"
+    name="L_Thigh"
     type="revolute">
     <origin
       xyz="0 0 0"
       rpy="-2.4963 0 -1.5708" />
     <parent
-      link="L Hip 2" />
+      link="L_Hip_2" />
     <child
-      link="L Thigh" />
+      link="L_Thigh" />
     <axis
-      xyz="0 0 0" />
+      xyz="-1 0 0" />
     <limit
       lower="0"
       upper="0"
@@ -747,19 +747,19 @@
       velocity="0" />
   </joint>
   <link
-    name="L Foreleg">
+    name="L_Foreleg">
     <inertial>
       <origin
-        xyz="-6.07777717043234E-14 0.0208608884937233 -0.00148862644910063"
+        xyz="-6.07777717043234E-14 0.0208608884937233 -0.00148862644910062"
         rpy="0 0 0" />
       <mass
         value="0.00244939435652077" />
       <inertia
         ixx="1.23016334442146E-06"
-        ixy="1.10482089002431E-18"
-        ixz="4.05517023497996E-20"
-        iyy="4.3729455263606E-08"
-        iyz="-7.22622718280935E-08"
+        ixy="1.1048270938789E-18"
+        ixz="4.06575814682064E-20"
+        iyy="4.37294552636058E-08"
+        iyz="-7.22622718280936E-08"
         izz="1.19608854304055E-06" />
     </inertial>
     <visual>
@@ -768,7 +768,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/L Foreleg.STL" />
+          filename="package://CMU Mk 5/meshes/L_Foreleg.STL" />
       </geometry>
       <material
         name="">
@@ -782,20 +782,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/L Foreleg.STL" />
+          filename="package://CMU Mk 5/meshes/L_Foreleg.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="L Foreleg"
+    name="L_Foreleg"
     type="revolute">
     <origin
       xyz="0 -0.015892 -0.0084481"
       rpy="-1.4674 0 0" />
     <parent
-      link="L Thigh" />
+      link="L_Thigh" />
     <child
-      link="L Foreleg" />
+      link="L_Foreleg" />
     <axis
       xyz="-1 0 0" />
     <limit
@@ -805,7 +805,7 @@
       velocity="0" />
   </joint>
   <link
-    name="L Shin">
+    name="L_Shin">
     <inertial>
       <origin
         xyz="-4.16581933959173E-05 0.022030711218573 -0.00550832169546654"
@@ -814,8 +814,8 @@
         value="0.00129204638168326" />
       <inertia
         ixx="4.33803544747732E-07"
-        ixy="-1.98250687474351E-09"
-        ixz="4.0505819080752E-10"
+        ixy="-1.98250687474352E-09"
+        ixz="4.05058190807507E-10"
         iyy="5.92096368882015E-08"
         iyz="1.35892895128347E-07"
         izz="3.79552483511825E-07" />
@@ -826,7 +826,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/L Shin.STL" />
+          filename="package://CMU Mk 5/meshes/L_Shin.STL" />
       </geometry>
       <material
         name="">
@@ -840,20 +840,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/L Shin.STL" />
+          filename="package://CMU Mk 5/meshes/L_Shin.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="L Shin"
+    name="L_Shin"
     type="revolute">
     <origin
       xyz="0 0.064515 0"
       rpy="-1.1349 0 0" />
     <parent
-      link="L Foreleg" />
+      link="L_Foreleg" />
     <child
-      link="L Shin" />
+      link="L_Shin" />
     <axis
       xyz="-1 0 0" />
     <limit
@@ -863,7 +863,7 @@
       velocity="0" />
   </joint>
   <link
-    name="L Foot">
+    name="L_Foot">
     <inertial>
       <origin
         xyz="0.000576077384995929 -1.62089092148321E-13 0.00529707030327459"
@@ -872,10 +872,10 @@
         value="0.00051872433253689" />
       <inertia
         ixx="7.30760751685429E-09"
-        ixy="-5.95549361522866E-21"
-        ixz="7.43767800623544E-09"
+        ixy="-5.95663098857092E-21"
+        ixz="7.43767800623545E-09"
         iyy="2.17998889648242E-08"
-        iyz="5.39942144843989E-21"
+        iyz="5.3997316411696E-21"
         izz="1.61742058480562E-08" />
     </inertial>
     <visual>
@@ -884,7 +884,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/L Foot.STL" />
+          filename="package://CMU Mk 5/meshes/L_Foot.STL" />
       </geometry>
       <material
         name="">
@@ -898,20 +898,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/L Foot.STL" />
+          filename="package://CMU Mk 5/meshes/L_Foot.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="L Foot"
+    name="L_Foot"
     type="revolute">
     <origin
       xyz="0 0.050359 -0.015576"
       rpy="0 -1.3777 -1.5708" />
     <parent
-      link="L Shin" />
+      link="L_Shin" />
     <child
-      link="L Foot" />
+      link="L_Foot" />
     <axis
       xyz="0 -1 0" />
     <limit
@@ -924,16 +924,16 @@
     name="L_Servo">
     <inertial>
       <origin
-        xyz="0.000486227731408585 -0.000823287374738496 -5.20722166774679E-10"
+        xyz="0.000486227731408585 -0.000823287374738496 -5.20722180652466E-10"
         rpy="0 0 0" />
       <mass
         value="0.000108566149369813" />
       <inertia
         ixx="6.78013685642585E-10"
         ixy="-1.55186013777533E-10"
-        ixz="-9.76830574490556E-17"
+        ixz="-9.76830574425933E-17"
         iyy="5.20764811254812E-10"
-        iyz="-2.36994016732313E-16"
+        iyz="-2.36994016577217E-16"
         izz="9.03101565925092E-10" />
     </inertial>
     <visual>
@@ -942,7 +942,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/L_Servo.STL" />
+          filename="package://CMU Mk 5/meshes/L_Servo.STL" />
       </geometry>
       <material
         name="">
@@ -956,7 +956,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/L_Servo.STL" />
+          filename="package://CMU Mk 5/meshes/L_Servo.STL" />
       </geometry>
     </collision>
   </link>
@@ -967,7 +967,7 @@
       xyz="0.002 0.012585 0"
       rpy="-1.3893 0 3.1416" />
     <parent
-      link="L Shin" />
+      link="L_Shin" />
     <child
       link="L_Servo" />
     <axis
@@ -979,19 +979,19 @@
       velocity="0" />
   </joint>
   <link
-    name="L_Servo Joint">
+    name="L_Servo_Link">
     <inertial>
       <origin
-        xyz="-1.39416256317304E-13 0.0193150000012854 2.6624535909292E-13"
+        xyz="-1.39416256317304E-13 0.0193150000012854 2.66259236880728E-13"
         rpy="0 0 0" />
       <mass
         value="5.90677466361003E-05" />
       <inertia
-        ixx="7.67849248203425E-09"
-        ixy="6.87477723469777E-21"
-        ixz="-2.68833699079734E-24"
-        iyy="1.55957115727918E-11"
-        iyz="4.95532262090914E-19"
+        ixx="7.67849248203426E-09"
+        ixy="6.87447653354248E-21"
+        ixz="-2.79173456736647E-24"
+        iyy="1.55957115727896E-11"
+        iyz="4.95532632868162E-19"
         izz="7.67827899614785E-09" />
     </inertial>
     <visual>
@@ -1000,7 +1000,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/L_Servo Joint.STL" />
+          filename="package://CMU Mk 5/meshes/L_Servo_Link.STL" />
       </geometry>
       <material
         name="">
@@ -1014,12 +1014,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/L_Servo Joint.STL" />
+          filename="package://CMU Mk 5/meshes/L_Servo_Link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="L_Servo Joint"
+    name="L_Servo_Link"
     type="revolute">
     <origin
       xyz="0 -0.0075599 0"
@@ -1027,7 +1027,7 @@
     <parent
       link="L_Servo" />
     <child
-      link="L_Servo Joint" />
+      link="L_Servo_Link" />
     <axis
       xyz="-1 0 0" />
     <limit
@@ -1040,16 +1040,16 @@
     name="L_Linkage">
     <inertial>
       <origin
-        xyz="-5.0487392044829E-14 0.0331958375250774 2.39075252650434E-12"
+        xyz="-5.0487392044829E-14 0.0331958375250774 2.39074905705738E-12"
         rpy="0 0 0" />
       <mass
         value="0.000113819103585905" />
       <inertia
         ixx="4.88600388859053E-08"
-        ixy="4.87190090683355E-20"
-        ixz="-4.71492949155226E-23"
-        iyy="7.27167695354917E-11"
-        iyz="6.04447426736395E-18"
+        ixy="4.87194161962932E-20"
+        ixz="-4.54949336904165E-23"
+        iyy="7.27167695354913E-11"
+        iyz="6.04448317571141E-18"
         izz="4.88062919669675E-08" />
     </inertial>
     <visual>
@@ -1058,7 +1058,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/L_Linkage.STL" />
+          filename="package://CMU Mk 5/meshes/L_Linkage.STL" />
       </geometry>
       <material
         name="">
@@ -1072,7 +1072,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://CMU.SLDASM/meshes/L_Linkage.STL" />
+          filename="package://CMU Mk 5/meshes/L_Linkage.STL" />
       </geometry>
     </collision>
   </link>
@@ -1083,7 +1083,7 @@
       xyz="-0.0057452 0 0"
       rpy="-1.5034 0 0" />
     <parent
-      link="L Thigh" />
+      link="L_Thigh" />
     <child
       link="L_Linkage" />
     <axis
