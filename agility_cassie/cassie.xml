@@ -65,7 +65,9 @@
       <geom type="ellipsoid" size="0.15 0.12 0.13" pos="0.03 0 0.03" class="collision"/>
       <geom size="0.095" fromto="-.04 0.14 .01 .02 0.14 .01" class="collision"/>
       <geom size="0.095" fromto="-.04 -.14 .01 .02 -.14 .01" class="collision"/>
+      
       <site name="imu" size="0.01" pos="0.03155 0 -0.07996"/>
+      
       <body name="left-hip-roll" pos="0.021 0.135 0" xyaxes="0 0 -1 0 1 0">
         <inertial pos="-0.01793 0.0001 -0.04428" mass="1.82" fullinertia="0.003431 0.003793 0.002135 -6.65e-07 -0.00084 3.99e-06"/>
         <joint name="left-hip-roll" type="hinge" range="-15 22.5" damping="1" armature="0.038125"/>
