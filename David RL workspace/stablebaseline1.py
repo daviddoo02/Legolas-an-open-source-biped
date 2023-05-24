@@ -45,10 +45,18 @@ log_path = os.path.join("Training", "Logs")             # Define where to save t
 env = DummyVecEnv([lambda: env])                        # Create environment with the lambda function, then wrap the environment in a Dummy Vectorized Environment
 model = PPO('MlpPolicy', env, verbose=1, tensorboard_log=log_path)      # Define our model: MlpPolicy = Multi Layered Perceptron Policy
 
-model.learn(total_timesteps=40000)                      # Train our model
+# model.learn(total_timesteps=40000)                      # Train our model
 
 # 4. Save trained model:
 
 PPO_Path = os.path.join("Training", 'Saved Models', 'PPO_Model_Cartpole')
 
-model.save(PPO_Path)                                    # Save our model
+# model.save(PPO_Path)                                    # Save our model
+
+# 5. Load model
+
+model = PPO.load(PPO_Path, env=env)
+
+# 6. Evaluation
+
+evaluate_policy(model, env, n_eval_episodes=10, render=True)
