@@ -49,7 +49,7 @@ model = PPO('MlpPolicy', env, verbose=1, tensorboard_log=log_path)      # Define
 
 # 4. Save trained model:
 
-PPO_Path = os.path.join("Training", 'Saved Models', 'PPO_Model_Cartpole')
+PPO_Path = os.path.join("Training", 'Saved Models', 'best_model')
 
 # model.save(PPO_Path)                                    # Save our model
 

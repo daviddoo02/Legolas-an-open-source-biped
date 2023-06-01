@@ -10,9 +10,10 @@ env = gym.make(environment_name)
 
 save_path = os.path.join('Training', 'Saved Models')
 
-# ----------------- Important ----------------------------- #
+# ----------------- Callbacks ----------------------------- #
 
 # Call back defining training goal
+
 stop_callback = StopTrainingOnRewardThreshold(reward_threshold=200, verbose=1)
 
 # Callback function to evaluate the training and stop training when goal is met
