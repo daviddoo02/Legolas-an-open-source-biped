@@ -1,1 +1,0 @@
-controller_joint_names: ['', 'R_Hip_1', 'R_Hip_2', 'R_Thigh', 'R_Foreleg', 'R_Shin', 'R_Foot', 'R_Servo', 'R_Servo_Link', 'R_Linkage', 'L_Hip_1', 'L_Hip_2', 'L_Thigh', 'L_Foreleg', 'L_Shin', 'L_Foot', 'L_Servo', 'L_Servo_Link', 'L_Linkage', ]
