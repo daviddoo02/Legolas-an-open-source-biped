@@ -1,6 +1,6 @@
 # Legolas - An Open Source Bipedal Robot
 
-Legolas is a mini bipedal robot inspired by the Cassie by Agility Robotics. The project aims to provide an open-source platform for applying reinforcement learning in robotics.
+Legolas is a mini bipedal robot inspired by the Cassie by Agility Robotics. The project aims to provide an open-source platform for learning and applying reinforcement learning in robotics.
 
 <p align="center">
   <img src="assets/cover_image_front.jpg" width="400" />
