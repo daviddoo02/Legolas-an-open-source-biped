@@ -27,9 +27,7 @@ This repository contains CAD files and 3D printing files for Legolas. The code f
 
     Alternatively, use the provided STL files located in `CAD/Legolas/V2/STLs` to 3D print your own robot.
 
-4. **Acquire required electronics:**
-
-    Acquire the required electronics as specified in the code repository.
+4. Assemble the robot and have fun!
 
 ## Required Materials
 
@@ -57,9 +55,9 @@ Materials and components used are listed and linked below.
 9. [USB C Connector](https://www.amazon.com/dp/B0CCJRWKC5)
 10. [4 to 1 Wire Connector](https://www.amazon.com/dp/B0B28GNVGZ)
 
-## Usage
+## Assembly Instruction
 
-Instructions and examples for using Legolas will be added in future updates.
+Instructions and examples for assembling Legolas will be added in future updates.
 
 ## License
 
