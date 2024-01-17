@@ -27,7 +27,7 @@ This repository contains CAD files and 3D printing files for Legolas. The code f
 
     Alternatively, use the provided STL files located in `CAD/Legolas/V2/STLs` to 3D print your own robot.
 
-4. Assemble the robot and have fun!
+4. **Assemble the robot and have fun!**
 
 ## Required Materials
 
