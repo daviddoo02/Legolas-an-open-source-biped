@@ -7,9 +7,15 @@ Legolas is a mini bipedal robot inspired by the Cassie by Agility Robotics. The 
   <img src="assets/cover_image_back.jpg" width="400" />
 </p>
 
+<p align="center">
+  <a href="assets/Walking_Test_3.mp4"><img src="assets/Walking_Test_3.gif" alt="Video 3" width="800"></a>
+</p>
+
 ## Repository Contents
 
-This repository contains CAD files and 3D printing files for Legolas. The code for the robot is available in a [separate repository](https://github.com/daviddoo02/Legolas_Controller).
+This repository contains CAD files and 3D printing files for Legolas. 
+
+The code for the robot is available at [Legolas Controller](https://github.com/daviddoo02/Legolas_Controller).
 
 ## Getting Started
 
